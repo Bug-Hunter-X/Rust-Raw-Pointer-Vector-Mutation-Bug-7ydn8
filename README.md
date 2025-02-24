@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Rust when using raw pointers with vectors.  Modifying a vector through a raw pointer after any operation that might reallocate the vector (like push, insert, etc.) can lead to memory safety violations. The `bug.rs` file shows the problematic code, while `bugSolution.rs` demonstrates a safer approach using safe Rust methods.
